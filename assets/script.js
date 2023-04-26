@@ -41,7 +41,7 @@ eleBtn.addEventListener('click', function () {
                 
                 // AGGIUNGIAMO CHE SE L'UTENTE PRENDE UN NUMERO CHE SI CONTIENE NELLA ARRAY ESPLODE LA BOMBA
 
-                if (flagGame === false){
+                if (flagGame == false){
                     
                 }
             
