@@ -13,7 +13,7 @@ const eleText = document.querySelector('.text-lose');
 const elePoint = document.querySelector('.point-user');
 const arrayNumberRandom = [];
 let point = 0;
-let flagGame = true
+let flagGame = false
 
 
 
@@ -49,6 +49,7 @@ eleBtn.addEventListener('click', function () {
                     console.log('Hai perso')
                     this.classList.toggle('red');
                     eleText.classList.add('text')
+                    flagGame == true
                 }
 
                  else{
