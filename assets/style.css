@@ -75,3 +75,23 @@ footer{
     height: 30px;
     
 }
+
+.red{
+    background-color: red;
+}
+
+
+.text-lose{
+    display: none;
+}
+
+
+.text{
+    display: block;
+    text-align: center;
+}
+
+.blue{
+    background-color: aqua;
+}
+
