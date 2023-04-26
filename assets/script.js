@@ -44,7 +44,7 @@ eleBtn.addEventListener('click', function () {
                     console.log('Hai perso')
                     this.classList.toggle('red');
                     eleText.classList.add('text')
-                    flagGame = true
+                     let flagGame = true
                       
 
                     
@@ -53,10 +53,9 @@ eleBtn.addEventListener('click', function () {
                  else{
                     this.classList.toggle('clicked');
                     this.classList.toggle('blue');
-                    elePoint.classList('text')
                     point++;
                     console.log(point);
-                    elePoint.innerHTML = (point);
+                    elePoint.innerHTML = point;
                 }
             }
         );
