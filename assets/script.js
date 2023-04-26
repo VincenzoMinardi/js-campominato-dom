@@ -13,7 +13,8 @@ const eleText = document.querySelector('.text-lose');
 const elePoint = document.querySelector('.point-user');
 const arrayNumberRandom = [];
 let point = 0;
-let flagGame = false
+let flagGame = true
+
 
 
 
@@ -39,15 +40,15 @@ eleBtn.addEventListener('click', function () {
                 console.log(this);
                 
                 // AGGIUNGIAMO CHE SE L'UTENTE PRENDE UN NUMERO CHE SI CONTIENE NELLA ARRAY ESPLODE LA BOMBA
+
+                if (flagGame === false){
+                    
+                }
             
                 if(arrayNumberRandom.includes(i + 1)){
                     console.log('Hai perso')
                     this.classList.toggle('red');
                     eleText.classList.add('text')
-                     let flagGame = true
-                      
-
-                    
                 }
 
                  else{
