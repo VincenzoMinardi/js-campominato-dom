@@ -42,23 +42,25 @@ eleBtn.addEventListener('click', function () {
                 // AGGIUNGIAMO CHE SE L'UTENTE PRENDE UN NUMERO CHE SI CONTIENE NELLA ARRAY ESPLODE LA BOMBA
 
                 if (flagGame == false){
+
+                    if(arrayNumberRandom.includes(i + 1)){
+                        console.log('Hai perso')
+                        this.classList.toggle('red');
+                        eleText.classList.add('text')
+                        flagGame = true
+                    }
+    
+                     else{
+                        this.classList.toggle('clicked');
+                        this.classList.toggle('blue');
+                        point++;
+                        console.log(point);
+                        elePoint.innerHTML = point;
+                    }
                     
                 }
             
-                if(arrayNumberRandom.includes(i + 1)){
-                    console.log('Hai perso')
-                    this.classList.toggle('red');
-                    eleText.classList.add('text')
-                    flagGame == true
-                }
-
-                 else{
-                    this.classList.toggle('clicked');
-                    this.classList.toggle('blue');
-                    point++;
-                    console.log(point);
-                    elePoint.innerHTML = point;
-                }
+                
             }
         );
         
