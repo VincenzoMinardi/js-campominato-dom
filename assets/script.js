@@ -16,6 +16,10 @@ console.log(eleHard)
 const eleCrazy =document.querySelector ('#crazy')
 console.log(eleCrazy)
 
+arrayNumberRandom = [];
+console.log (arrayNumberRandom)
+
+
 
 
 
@@ -39,15 +43,31 @@ eleBtn.addEventListener('click', function(){
          }
      );
  }
+
+ // Generare 16 numeri random
+const elePcRandom = Math.floor(Math.random()* 100)
+console.log(elePcRandom)
+for (let i = 1; i > 16; i++){
+    if (elePcRandom == elePcRandom){
+        return false
+    }
+    else{
+        arrayNumberRandom = [i];
+    }
+
+
+
+}
  
  // FUNCTION DEFINITIONS
  
- function createGrid(numberCell, eleContainer){
+    function createGrid(numberCell, eleContainer){
      for (let i= 0; i < numberCell; i++){
          eleContainer.innerHTML += `<div class="cell">${i+1}</div>`;
      }
      
  }
+
 });
 
 
