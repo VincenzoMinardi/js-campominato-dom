@@ -9,13 +9,8 @@ const eleBtn = document.querySelector('#btn-play');
 console.log(eleBtn);
 const eleGrid = document.querySelector('.grid');
 console.log(eleGrid);
-const eleEasy = document.querySelector('#easy')
-console.log(eleEasy)
-const eleHard = document.querySelector('#hard')
-console.log(eleHard)
-const eleCrazy = document.querySelector('#crazy')
-console.log(eleCrazy)
-
+ const arrayNumberRandom = [];
+let point = 0;
 
 
 
@@ -39,8 +34,16 @@ eleBtn.addEventListener('click', function () {
             function colorCell() {
                 console.log(this);
                 this.classList.toggle('clicked');
+                if(arrayNumberRandom === listCells){
+                    console.log('Hai perso')
+                }
+
+                else{
+                    point++
+                }
             }
         );
+        
     }
 });
 
@@ -55,12 +58,12 @@ function createGrid(numberCell, eleContainer) {
 }
 // Generare 16 numeri random
 
-arrayNumberRandom = [];
+
 getRandom (1, 100, arrayNumberRandom)
 
 
 function getRandom (min, max, numbers) {
-      arrayNumberRandom = []
+    
     while (numbers.length < 16) {
       let randomNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
       if (!numbers.includes(randomNumber)) {
@@ -70,3 +73,6 @@ function getRandom (min, max, numbers) {
     console.log(numbers);
 }
 
+// Aggiungere Numeri Random dentro La tabella
+
+getRandom === eleGrid;
